@@ -39,11 +39,11 @@ def get_prefix(bot, message):
 
 bot = Bot(command_prefix=get_prefix)
 
-extensions = []
+cogs = ['cogs.basic']
 
 if __name__ == '__main__':
-    for extension in extensions:
-        bot.load_extension(extension)
+    for cog in cogs:
+        bot.load_extension(cog)
 
 
 @bot.event

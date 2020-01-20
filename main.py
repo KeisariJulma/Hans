@@ -39,7 +39,10 @@ def get_prefix(bot, message):
 
 bot = Bot(command_prefix=get_prefix)
 
-cogs = ['cogs.basic']
+cogs = [
+    'cogs.basic',
+    'cogs.music.music'
+]
 
 if __name__ == '__main__':
     for cog in cogs:

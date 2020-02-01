@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from discord.ext import commands
 from datetime import datetime as d
 
@@ -15,10 +16,5 @@ class Basic(commands.Cog):
         msg = await ctx.send(content='Pinging')
         await msg.edit(content=f'Pong!\nOne message round-trip took {( d.timestamp( d.now() ) - start ) * 1000 }ms.')
         return
-    @commands.command(
-        name='',
-        description='',
-        aliases=['']
-    )
 def setup(bot):
     bot.add_cog(Basic(bot))

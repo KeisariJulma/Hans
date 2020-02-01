@@ -1,0 +1,16 @@
+2020-01-21 12:48:20,645:INFO:discord.client: logging in using static token
+2020-01-21 12:48:21,222:INFO:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2020-01-21 12:48:21,222:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2020-01-21 12:48:21,438:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-lnw9",{"micros":54151,"calls":["discord-sessions-prd-1-30",{"micros":51515,"calls":["start_session",{"micros":35578,"calls":["api-prd-main-6xxj",{"micros":31733,"calls":["get_user",{"micros":3661},"add_authorized_ip",{"micros":2687},"get_guilds",{"micros":2198},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":39,"calls":[]},"presence_connect",{"micros":2,"calls":[]}]}]}] (Session ID: 656eb947ea2c106cf4204d4a9a06cbc5).
+2020-01-21 12:48:23,458:INFO:discord: Logged in as: Hans - 472197742001782784 Version: 1.2.5
+2020-01-21 12:48:49,242:INFO:discord.voice_client: Connecting to voice...
+2020-01-21 12:48:49,242:INFO:discord.voice_client: Starting voice handshake...
+2020-01-21 12:48:49,538:INFO:discord.voice_client: Voice handshake complete. Endpoint found russia253.discord.media (IP: 162.159.138.234)
+2020-01-21 12:48:50,118:INFO:discord.gateway: selected the voice protocol for use (xsalsa20_poly1305_suffix)
+2020-01-21 12:48:50,208:INFO:discord.gateway: received secret key for voice connection
+2020-01-21 12:49:27,222:INFO:discord.player: Preparing to terminate ffmpeg process 5992.
+2020-01-21 12:49:27,222:INFO:discord.player: ffmpeg process 5992 has not terminated. Waiting to terminate...
+2020-01-21 12:49:27,242:INFO:discord.player: ffmpeg process 5992 should have terminated with a return code of 1.
+2020-01-21 12:49:27,302:INFO:discord.voice_client: Disconnecting from voice normally, close code 1000.
+2020-01-21 12:49:27,302:INFO:discord.voice_client: The voice handshake is being terminated for Channel ID 627121059220553728 (Guild ID 627121059216359465)
+2020-01-21 12:49:27,302:INFO:discord.voice_client: The voice client has been removed for Channel ID 627121059220553728 (Guild ID 627121059216359465)

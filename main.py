@@ -2,13 +2,13 @@
 import discord
 import os
 import random
-import logging
 import json
 from discord.ext import commands
 from discord.ext.commands import Bot
 from discord.ext.tasks import loop
 from dotenv import load_dotenv
 from os.path import join, dirname
+from logger import logger
 
 if not discord.opus.is_loaded():
     # the 'opus' library here is opus.dll on windows
@@ -18,18 +18,12 @@ if not discord.opus.is_loaded():
     # note that on windows this DLL is automatically provided for you
     discord.opus.load_opus('opus')
 
+from configobj import ConfigObj
+config = ConfigObj('conf.ini')
 load_dotenv(join(dirname(__file__), '.env'))
 token = os.getenv('DISCORD_TOKEN')
 
-logger = logging.getLogger('discord')
-logger.setLevel(logging.INFO)
-handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
-handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
-logger.addHandler(handler)
-'''
-with open("config/config.json") as cfg:
-    config = json.load(cfg)
-'''
+
 
 def get_prefix(bot, message):
     prefixes = [',']

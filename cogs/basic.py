@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import asyncio
 from discord.ext import commands
 from logger import logger
 from datetime import datetime as d

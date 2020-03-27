@@ -15,8 +15,6 @@ config = ConfigObj('conf.ini')
 youtube_dl.utils.bug_reports_message = lambda: ''
 
 
-
-
 class VoiceError(Exception):
     pass
 
@@ -135,6 +133,7 @@ class YTDLSource(discord.PCMVolumeTransformer):
         if seconds > 0:
             duration.append(str(seconds).zfill(2))
         return ':'.join(duration)
+
 
 class Song:
     __slots__ = ('source', 'requester')
@@ -524,6 +523,7 @@ class Music(commands.Cog):
         if ctx.voice_client:
             if ctx.voice_client.channel != ctx.author.voice.channel:
                 raise commands.CommandError('Bot is already in a voice channel.')
+
 
 def setup(bot):
     bot.add_cog(Music(bot))

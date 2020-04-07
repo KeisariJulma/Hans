@@ -17,7 +17,6 @@ import itertools
 class News(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
-        self.data = []
         self.senduriminzokkiri.start()
 
     @loop(seconds=120)

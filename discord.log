@@ -1,27 +1,14 @@
-2020-03-25 18:26:50,768:INFO:discord: Loaded Basic
-2020-03-25 18:26:51,472:INFO:discord: Loaded Music
-2020-03-25 18:26:51,473:INFO:discord: Loaded russian roulette
-2020-03-25 18:26:51,674:INFO:discord: Loaded News
-2020-03-25 18:26:51,674:ERROR:discord.ext.tasks: Internal background task failed.
+2020-04-02 20:00:15,723:INFO:discord: Loaded Basic
+2020-04-02 20:00:16,318:INFO:discord: Loaded Music
+2020-04-02 20:00:16,319:INFO:discord.client: logging in using static token
+2020-04-02 20:00:17,446:INFO:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
+2020-04-02 20:00:17,448:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2020-04-02 20:00:17,711:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-3lw3",{"micros":72231,"calls":["discord-sessions-prd-1-56",{"micros":67857,"calls":["start_session",{"micros":63120,"calls":["api-prd-main-4x89",{"micros":56938,"calls":["get_user",{"micros":3359},"add_authorized_ip",{"micros":8997},"get_guilds",{"micros":2778},"coros_wait",{"micros":2}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":1,"calls":[]}]}]}] (Session ID: c48f683a042e9011b20fb570a143416e).
+2020-04-02 20:00:19,732:ERROR:discord.ext.tasks: Internal background task failed.
 Traceback (most recent call last):
   File "C:\Python3.7\lib\site-packages\discord\ext\tasks\__init__.py", line 73, in _loop
     await self.coro(*args, **kwargs)
-  File "C:\Users\Admin\Envs\Hans\cogs\news.py", line 25, in senduriminzokkiri
-    print(kek)
-NameError: name 'kek' is not defined
-2020-03-25 18:26:51,674:INFO:discord.client: logging in using static token
-2020-03-25 18:26:52,558:INFO:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=6&compress=zlib-stream
-2020-03-25 18:26:52,573:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
-2020-03-25 18:26:52,818:INFO:discord.gateway: Shard ID None has connected to Gateway: ["gateway-prd-main-4tl2",{"micros":42987,"calls":["discord-sessions-prd-1-22",{"micros":41845,"calls":["start_session",{"micros":36508,"calls":["api-prd-main-wc81",{"micros":33074,"calls":["get_user",{"micros":2970},"add_authorized_ip",{"micros":1884},"get_guilds",{"micros":2416},"coros_wait",{"micros":1}]}]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":4434,"calls":[]}]}]}] (Session ID: 07a08d93e588053bfccfcc1524dd58fe).
-2020-03-25 18:26:54,853:ERROR:discord.ext.tasks: Internal background task failed.
-Traceback (most recent call last):
-  File "C:\Python3.7\lib\site-packages\discord\ext\tasks\__init__.py", line 73, in _loop
-    await self.coro(*args, **kwargs)
-  File ".\main.py", line 47, in status_change
+  File ".\main.py", line 43, in status_change
     await bot.change_presence(status=discord.Status.online, activity=discord.Game(name=random.choice(statusses)))
 NameError: name 'discord' is not defined
-2020-03-25 18:26:54,859:INFO:discord: Logged in as: Hans dev - 629609178998112276 Version: 1.3.2
-2020-03-25 18:27:33,824:INFO:discord.client: Received signal to terminate bot and event loop.
-2020-03-25 18:27:33,824:INFO:discord.client: Cleaning up tasks.
-2020-03-25 18:27:33,824:INFO:discord.client: Cleaning up after 4 tasks.
-2020-03-25 18:27:38,826:WARNING:discord.gateway: Heartbeat blocked for more than 5 seconds.
+2020-04-02 20:00:19,734:INFO:discord: Logged in as: Hans dev - 629609178998112276 Version: 1.3.2
